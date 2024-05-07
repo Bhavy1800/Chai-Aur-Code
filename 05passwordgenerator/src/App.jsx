@@ -24,22 +24,17 @@ function App() {
         <div className="flex item-center gap-x-1 ">
           <input
             type="range"
-            name=""
             min={6}
             max={100}
             value={length}
             className="cursor-pointer"
             onChange={(e) => setLength(e.target.value)}
-            id=""
           />
           <label htmlFor="length">Length: {length}</label>
         </div>
         <div className="flex item-center gap-x-1 ">
           <input
             type="checkbox"
-            name=""
-            id=""
-            className=""
             defaultChecked={numAllowed}
             onChange={() => {
               setNumAllowed((prev) => !prev);
@@ -50,9 +45,6 @@ function App() {
         <div className="flex item-center gap-x-1 ">
           <input
             type="checkbox"
-            name=""
-            id=""
-            className=""
             defaultChecked={charAllowed}
             onChange={() => {
               setCharAllowed((prev) => !prev);
