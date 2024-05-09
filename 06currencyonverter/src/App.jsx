@@ -1,6 +1,8 @@
+import { useState } from "react";
 import "./App.css";
 
 function App() {
+  const [amount, setAmount] = useState(0);
   return (
     <div
       className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
